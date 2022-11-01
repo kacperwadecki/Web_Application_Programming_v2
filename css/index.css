@@ -1,22 +1,5 @@
 * {
-    border: 0;
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-}
-
-html {
-    --font-color: #fff;
-}
-
-body {
-    background: linear-gradient(rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.86)), url("../img/index-01.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: var(--font-color);
-    min-height: 100vh;
 }
 
 main {

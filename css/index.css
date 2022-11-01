@@ -1,0 +1,69 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+html {
+    --font-color: #fff;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.86)), url("../img/index-01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--font-color);
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 21rem;
+}
+
+.form > .fa-regular {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.form > input[type="text"], .form > input[type="password"] {
+    width: 12rem;
+    height: 2rem;
+    background: none;
+    border-bottom: 0.01rem solid var(--font-color);
+    margin-top: 1rem;
+    color: var(--font-color);
+    padding: 0 1rem; 
+    font-weight: light;
+}
+
+.form > input[type="text"], .form > input[type="password"]:focus {
+    outline: none;
+}
+
+.form > input[type="submit"] {
+    margin-top: 2rem;
+    width: 10rem;
+    height: 2rem;
+    background: none;
+    color: var(--font-color);
+    border: 0.01rem solid var(--font-color);
+}
+
+.form > input[type="submit"]:hover {
+    cursor: pointer;
+    font-weight:bold;
+}

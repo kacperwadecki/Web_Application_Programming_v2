@@ -1,0 +1,75 @@
+.famous-math {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.famous-math > h1 {
+    font-weight: lighter;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 80%;
+}
+
+.gallery > figure > img {
+    width: 20rem;
+    height: 30rem;
+    margin: 1rem;
+    opacity: 0.7;
+    transition: 0.7s;
+    flex: 0 0 30%;
+}
+
+.gallery > figure > img:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.gallery > figure > figcaption {
+    font-size: 1.2rem;
+}
+
+.image:target {
+    display: flex;
+}
+
+.image {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.93);
+    position:fixed;
+    z-index: 1;
+    padding: 2.5rem;
+    top: 3.5rem;
+    border-radius: 0.2rem;
+}  
+
+.image > img {
+    height: 35rem;
+}
+
+.image > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image > div > h2 {
+    font-weight: normal;
+}
+
+.image > div > p {
+    width: 20rem;
+    font-weight: lighter;
+    line-height: 1.7rem;
+    padding-left: 1.25rem;
+    margin-top: 1rem;
+}

@@ -9,6 +9,11 @@ html {
     --gradient-color: rgba(0, 0, 0, 0.86);
     --gradient-color2: rgba(0, 0, 0, 0.9);
     --font-color: #fff;
+    --youtube-color: #ff0000;
+    --facebook-color: #1877f2;
+    --twitter-color: #1da1f2;
+    --instagram-color: #ffdc7d;
+    --google-color: #ea4335;
 }
 
 body {
@@ -125,6 +130,25 @@ html {
     margin-top: 1rem;
 }
 
+.footer-socials  .fa-youtube:hover {
+    color: var(--youtube-color);
+}
+
+.footer-socials  .fa-facebook:hover {
+    color: var(--facebook-color);
+}
+
+.footer-socials  .fa-twitter:hover {
+    color: var(--twitter-color);
+}
+
+.footer-socials  .fa-instagram:hover {
+    color: var(--instagram-color);
+}
+
+.footer-socials  .fa-google:hover {
+    color: var(--google-color);
+}
 
 /* media */
 

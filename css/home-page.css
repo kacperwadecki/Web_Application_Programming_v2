@@ -14,7 +14,9 @@
     font-size: 2.4rem;
 }
 
-.home-page-content {
+/* home-page-content-03 */
+
+.home-page-content-01 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,62 +72,62 @@
     padding: 1rem;
 }
 
-/* home-page-content2 */
+/* home-page-content-02 */
 
-.home-page-content2 {
+.home-page-content-02 {
     display: flex;
     justify-content: center;
     margin-top: 9rem;
     flex-wrap: wrap;
 }
 
-.home-page-content2 > div {
+.home-page-content-02 > div {
     display: flex;
     flex-direction: column;
     align-items: center;
     opacity: 0.8;
 }
 
-.home-page-content2 > div > img {
+.home-page-content-02 > div > img {
     width: 17rem;
     height: 30rem;
     padding: 2rem 0.3rem;
 }
 
-.home-page-content2 > div > h2 {
+.home-page-content-02 > div > h2 {
     font-weight: lighter;
 }
 
-.home-page-content2 > div > i {
+.home-page-content-02 > div > i {
     font-size: 4rem;
     padding: 0.2rem;
     color: #aaa;
 }
 
-/* home-page-content3 */
+/* home-page-content-03 */
 
-.home-page-content3 {
+.home-page-content-03 {
     display: flex;
-    margin-top: 5rem;
+    margin-top: 10rem;
     gap: 4rem;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.home-page-content3 > img {
-    width: 25rem;
+.home-page-content-03 > img {
+    width: 30rem;
 }
 
-.home-page-content3 > div {
+.home-page-content-03 > div {
     text-align: center;
 }
 
-.home-page-content3 > div > h2 {
+.home-page-content-03 > div > h2 {
     font-weight: normal;
 }
 
-.home-page-content3 > div > p {
+.home-page-content-03 > div > p {
     width: 20rem;
     font-weight: lighter;
     margin-top: 0.85rem;
@@ -149,17 +151,17 @@
         display: none;
     }
 
-    .home-page-content3 > img {
+    .home-page-content-03 > img {
         width: 20rem;
     }
 }
 
 @media (max-width: 869px) {
-    .home-page-content2 {
+    .home-page-content-02 {
         flex-direction: column;
     }
 
-    .home-page-content2 > div:nth-child(2) {
+    .home-page-content-02 > div:nth-child(2) {
         flex-direction: column-reverse;
     }
 }

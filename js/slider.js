@@ -1,15 +1,28 @@
 const leftArrow = document.querySelector(".fa-circle-arrow-left");
 const rightArrow = document.querySelector(".fa-circle-arrow-right");
-const img = document.getElementById("slider-img");
+const imgs = document.querySelectorAll('img');
 
-let counter = 1;
+var indexValue = 2;
 
-rightArrow.addEventListener('click', () => {
-    counter++;
-    img.src = "../img/shop-0" + counter + ".jpg";
-});
+showImg();
+
+function showImg() {
+    if(indexValue > 4) indexValue = 1;
+    else if(indexValue < 1) indexValue = 4;
+
+    for(var i = 0; i < 4; i++){
+        imgs[i].style.display = 'none';
+    }
+
+    imgs[indexValue - 1].style.display = 'block';
+}
 
 leftArrow.addEventListener('click', () => {
-    counter--;
-    img.src = "../img/shop-0" + counter + ".jpg";
-});
+    indexValue--;
+    showImg();
+})
+
+rightArrow.addEventListener('click', () => {
+    indexValue++;
+    showImg();
+})

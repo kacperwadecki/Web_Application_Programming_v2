@@ -11,8 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="../splide-2.4.21/dist/css/splide.min.css">
     <link rel="stylesheet" href="../css/main-style.css">
     <link rel="stylesheet" href="../css/shop.css">
+
+    <script src="../splide-2.4.21/dist/js/splide.min.js"></script>
+
 </head>
 <body>
     <header>
@@ -52,6 +56,7 @@
                 <figure>
                     <img src="../img/shop-05.jpg" alt="">
                     <figcaption>Kalkulator</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
                 </figure>
                 <p>14,99 zł</p>
             </div>
@@ -60,6 +65,7 @@
                 <figure>
                     <img src="../img/shop-06.jpg" alt="">
                     <figcaption>Cyrkiel</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
                 </figure>
                 <p>25,99 zł</p>
             </div>
@@ -68,6 +74,7 @@
                 <figure>
                     <img src="../img/shop-07.jpg" alt="">
                     <figcaption>Kurta</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
                 </figure>
                 <p>38,99 zł</p>
             </div>
@@ -75,76 +82,139 @@
             <div class="shop-item">
                 <figure>
                     <img src="../img/shop-08.png" alt="">
-                    <figcaption>Kurta</figcaption>
+                    <figcaption>Książka</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
                 </figure>
-                <p>38,99 zł</p>
+                <p>45,99 zł</p>
             </div>
 
             <div class="shop-item">
                 <figure>
                     <img src="../img/shop-09.png" alt="">
-                    <figcaption>Kurta</figcaption>
+                    <figcaption>Książka</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
                 </figure>
-                <p>38,99 zł</p>
+                <p>43,99 zł</p>
             </div>
 
             <div class="shop-item">
                 <figure>
                     <img src="../img/shop-10.png" alt="">
-                    <figcaption>Kurta</figcaption>
+                    <figcaption>Książka</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
                 </figure>
-                <p>38,99 zł</p>
+                <p>66,99 zł</p>
             </div>
 
             <div class="shop-item">
                 <figure>
                     <img src="../img/shop-11.png" alt="">
-                    <figcaption>Kurta</figcaption>
+                    <figcaption>Zegar</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
                 </figure>
-                <p>38,99 zł</p>
+                <p>23,99 zł</p>
             </div>
 
             <div class="shop-item">
                 <figure>
                     <img src="../img/shop-12.png" alt="">
-                    <figcaption>Kurta</figcaption>
+                    <figcaption>Kubek</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
                 </figure>
-                <p>38,99 zł</p>
+                <p>54,99 zł</p>
             </div>
 
             <div class="shop-item">
                 <figure>
                     <img src="../img/shop-13.png" alt="">
-                    <figcaption>Kurta</figcaption>
+                    <figcaption>Książka</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
                 </figure>
-                <p>38,99 zł</p>
+                <p>65,99 zł</p>
             </div>
 
             <div class="shop-item">
                 <figure>
                     <img src="../img/shop-14.png" alt="">
-                    <figcaption>Kurta</figcaption>
+                    <figcaption>Książka</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
                 </figure>
-                <p>38,99 zł</p>
+                <p>97,99 zł</p>
             </div>
 
             <div class="shop-item">
                 <figure>
                     <img src="../img/shop-15.png" alt="">
-                    <figcaption>Kurta</figcaption>
+                    <figcaption>Płyta</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
                 </figure>
-                <p>38,99 zł</p>
+                <p>64,99 zł</p>
             </div>
 
             <div class="shop-item">
                 <figure>
                     <img src="../img/shop-16.png" alt="">
-                    <figcaption>Kurta</figcaption>
+                    <figcaption>Książka</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
                 </figure>
-                <p>38,99 zł</p>
+                <p>66,99 zł</p>
             </div>
             
         </article>
+
+        <article class="shop-see-more">
+            <div>
+                <img src="../img/shop-17.jpg" alt="">
+                <input class="shop-see-more-overlay" type="button" value="Zobacz więcej">
+            </div>
+
+            <div>
+                <img src="../img/shop-18.jpg" alt="">
+                <input class="shop-see-more-overlay" type="button" value="Zobacz więcej">
+            </div>
+        </article>
+        
+        <article class="shop-recommended">
+            <h2>Polecamy</h2>
+            <div class="splide">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                      <li class="splide__slide">
+                        <div class="splide__slide__container">
+                          <img src="../img/shop-08.png">
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="splide__slide__container">
+                          <img src="../img/shop-09.png">
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="splide__slide__container">
+                          <img src="../img/shop-10.png">
+                        </div>
+                      </li>
+
+                      <li class="splide__slide">
+                        <div class="splide__slide__container">
+                          <img src="../img/shop-14.png">
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="splide__slide__container">
+                          <img src="../img/shop-08.png">
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="splide__slide__container">
+                          <img src="../img/shop-13.png">
+                        </div>
+                      </li>
+                  </ul>
+                </div>
+            </div>
+        </article>
+        
     </main>
 
     <footer class="footer">

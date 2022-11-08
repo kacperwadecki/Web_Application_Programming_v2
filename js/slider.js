@@ -26,3 +26,16 @@ rightArrow.addEventListener('click', () => {
     indexValue++;
     showImg();
 })
+
+
+new Splide( '.splide', {
+    type       : 'loop',
+    height     : '20rem',
+    speed      : 1000,
+    perPage    : 3,
+    breakpoints: {
+      640: {
+        perPage: 2,
+      },
+    },
+  } ).mount();

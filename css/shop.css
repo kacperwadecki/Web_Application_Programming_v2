@@ -219,7 +219,7 @@
 
 .shop-recommended > h2 {
   position: absolute;
-  left: 2%;
+  left: -9%;
   top: 0;
   font-weight: lighter;
   text-transform: uppercase;
@@ -229,6 +229,7 @@
 .splide__slide__container > img {
   width: 100%;
   height: 100%;
+  opacity: 0.8;
 }
 
 .splide__slide__container > img:hover {

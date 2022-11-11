@@ -1,0 +1,43 @@
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.applications {
+    width: 26rem;
+}
+
+.applications > ul {
+    list-style: none;
+}
+
+.applications > ul > a {
+    text-decoration: none;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.applications > ul > a::before {
+    content: "";
+}
+
+.applications > ul > a:hover {
+    font-weight: normal;
+}
+
+.applications > ul > a > li {
+    padding: 1rem;
+}
+
+.fa-star {
+    padding-right: 1rem;
+}
+
+@media (max-width: 425px) {
+    .applications > ul > a {
+        font-size: 2rem;
+    }
+}

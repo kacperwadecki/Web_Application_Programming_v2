@@ -12,34 +12,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/main-style.css">
-    <link rel="stylesheet" href="../css/applications.css">
+    <link rel="stylesheet" href="../css/jquery.css">
 </head>
 <body>
     <header>
         <nav class="nav">
             <i class="fa-solid fa-bars hamburger"></i>
             <ul class="nav-bar">
-                <li class="nav-item"><a href="home-page.html">Strona Główna</a></li>
+                <li class="nav-item page-active"><a href="home-page.html">Strona Główna</a></li>
                 <li class="nav-item"><a href="famous-math.html">Znani Matematycy</a> </li>
                 <li class="nav-item"><a href="curiosities.html">Ciekawostki</a> </li>
                 <li class="nav-item"><a href="shop.html">Sklep</a></li>
-                <li class="nav-item page-active"><a href="applications.html">Aplikacje</a></li>
+                <li class="nav-item"><a href="applications.html">Aplikacje</a></li>
                 <li class="nav-item"><a href="contact.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <article class="applications">
-            <ul>
-                <a href="kalkulator.html"><li><i class="fa-regular fa-star"></i>Kalkulator</li></a>
-                <a href="tictactoe.html"><li><i class="fa-regular fa-star"></i>Tic Tac Toe</li></a>
-                <a href="zmieniacz_tla.html"><li><i class="fa-regular fa-star"></i>Zmieniacz tła</li></a>
-                <a href="jquery.html"><li><i class="fa-regular fa-star"></i>jQuery</li></a>
-                <a href="labor_162603_4.php"><li><i class="fa-regular fa-star"></i>PHP</li></a>
-            </ul>
-        </article>
-    </main>
+        <section>
+             <h1>Lab4 jQuery</h1>
+             <div class="container-animations">
+             <div id="animacjaTestowa1" class="text-block"> Kliknij by powiekszyć</div>
+             <div id="animacjaTestowa2" class="text-block"> Kliknij by powiekszyć</div>
+             <div id="animacjaTestowa3" class="text-block"> Kliknij by powiekszyć</div>
+             </div>
+        </section>
+     </main>
 
     <footer class="footer">
         <div class="footer-links">
@@ -74,7 +73,7 @@
     </footer>
 
     <script src="../js/nav-bar.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="../js/auto-type.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../js/jquery.js" type="text/javascript"></script>
 </body>
 </html>

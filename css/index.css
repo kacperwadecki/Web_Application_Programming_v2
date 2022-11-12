@@ -1,52 +1,54 @@
 * {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
 }
 
 .form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 21rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 21rem;
 }
 
 .form > .fa-regular {
-    font-size: 4rem;
-    margin-bottom: 1rem;
+  font-size: 4rem;
+  margin-bottom: 1rem;
 }
 
-.form > input[type="text"], .form > input[type="password"] {
-    width: 12rem;
-    height: 2rem;
-    background: none;
-    border-bottom: 0.01rem solid var(--font-color);
-    margin-top: 1rem;
-    color: var(--font-color);
-    padding: 0 1rem; 
-    font-weight: light;
+.form > input[type="text"],
+.form > input[type="password"] {
+  background: none;
+  border-bottom: 0.01rem solid var(--font-color);
+  color: var(--font-color);
+  font-weight: light;
+  height: 2rem;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  width: 12rem;
 }
 
-.form > input[type="text"], .form > input[type="password"]:focus {
-    outline: none;
+.form > input[type="text"],
+.form > input[type="password"]:focus {
+  outline: none;
 }
 
 .form > input[type="submit"] {
-    margin-top: 2rem;
-    width: 10rem;
-    height: 2rem;
-    background: none;
-    color: var(--font-color);
-    border: 0.01rem solid var(--font-color);
+  background: none;
+  border: 0.01rem solid var(--font-color);
+  color: var(--font-color);
+  height: 2rem;
+  margin-top: 2rem;
+  width: 10rem;
 }
 
 .form > input[type="submit"]:hover {
-    cursor: pointer;
-    font-weight:bold;
+  cursor: pointer;
+  font-weight: bold;
 }

@@ -1,167 +1,166 @@
 .home-page {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .home-page > h1 {
-    font-weight: normal;
-    margin-top: 1rem;
-    width: 30rem;
-    text-align: center;
-    padding: 1rem;
-    height: 3rem;
-    font-size: 2.4rem;
+  font-size: 2.4rem;
+  font-weight: normal;
+  height: 3rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+  width: 30rem;
 }
 
 /* home-page-content-03 */
 
 .home-page-content-01 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 7rem;
-    flex-wrap: wrap;
-    margin-top: 2rem;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7rem;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 .home-page-img {
-    display: flex;
-    position: relative;
-    margin-top: 2rem;
+  display: flex;
+  margin-top: 2rem;
+  position: relative;
 }
 
 .home-page-img > img {
-    width: 30rem;
+  width: 30rem;
 }
 
 .home-page-img > div {
-    background-color: rgba(0, 0, 0, 0.2);
-    width: 15rem;
-    height: 30rem;
-    position: absolute;
-    z-index: -1;
-    top: -4rem;
-    left: 3rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 30rem;
+  left: 3rem;
+  position: absolute;
+  top: -4rem;
+  width: 15rem;
+  z-index: -1;
 }
 
 .home-page-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 20rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
 }
 
 .home-page-text > i {
-    font-size: 5rem;
+  font-size: 5rem;
 }
 
 .home-page-text > h2 {
-    padding: 1rem;
-    font-weight: normal;
+  font-weight: normal;
+  padding: 1rem;
 }
 
 .home-page-text > blockquote > p {
-    width: 20rem;
-    text-align: center;
-    line-height: 1.4rem;
+  line-height: 1.4rem;
+  text-align: center;
+  width: 20rem;
 }
 
 .home-page-text > blockquote > footer {
-    font-weight: lighter;
-    padding: 1rem;
+  font-weight: lighter;
+  padding: 1rem;
 }
 
 /* home-page-content-02 */
 
 .home-page-content-02 {
-    display: flex;
-    justify-content: center;
-    margin-top: 9rem;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 9rem;
 }
 
 .home-page-content-02 > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    opacity: 0.8;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.8;
 }
 
 .home-page-content-02 > div > img {
-    width: 17rem;
-    height: 30rem;
-    padding: 2rem 0.3rem;
+  height: 30rem;
+  padding: 2rem 0.3rem;
+  width: 17rem;
 }
 
 .home-page-content-02 > div > h2 {
-    font-weight: lighter;
+  font-weight: lighter;
 }
 
 .home-page-content-02 > div > i {
-    font-size: 4rem;
-    padding: 0.2rem;
-    color: #aaa;
+  color: #aaa;
+  font-size: 4rem;
+  padding: 0.2rem;
 }
 
 /* home-page-content-03 */
 
 .home-page-content-03 {
-    display: flex;
-    margin-top: 10rem;
-    gap: 4rem;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
+  margin-top: 10rem;
 }
 
 .home-page-content-03 > img {
-    width: 30rem;
+  width: 30rem;
 }
 
 .home-page-content-03 > div {
-    text-align: center;
+  text-align: center;
 }
 
 .home-page-content-03 > div > h2 {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .home-page-content-03 > div > p {
-    width: 20rem;
-    font-weight: lighter;
-    margin-top: 0.85rem;
+  font-weight: lighter;
+  margin-top: 0.85rem;
+  width: 20rem;
 }
-
 
 /* media */
 
 @media (max-width: 500px) {
-    .home-page > h1 {
-        padding: 0;
-        font-size: 1.25rem;
-        width: 20rem;
-    }
+  .home-page > h1 {
+    font-size: 1.25rem;
+    padding: 0;
+    width: 20rem;
+  }
 
-    .home-page-img > img {
-        width: 19rem;
-    }
+  .home-page-img > img {
+    width: 19rem;
+  }
 
-    .home-page-img > div {
-        display: none;
-    }
+  .home-page-img > div {
+    display: none;
+  }
 
-    .home-page-content-03 > img {
-        width: 20rem;
-    }
+  .home-page-content-03 > img {
+    width: 20rem;
+  }
 }
 
 @media (max-width: 869px) {
-    .home-page-content-02 {
-        flex-direction: column;
-    }
+  .home-page-content-02 {
+    flex-direction: column;
+  }
 
-    .home-page-content-02 > div:nth-child(2) {
-        flex-direction: column-reverse;
-    }
+  .home-page-content-02 > div:nth-child(2) {
+    flex-direction: column-reverse;
+  }
 }

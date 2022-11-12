@@ -1,64 +1,64 @@
 .famous-math {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .famous-math > h1 {
-    font-weight: lighter;
-    font-size: 3rem;
-    letter-spacing: 0.2rem;
-    margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: lighter;
+  margin-top: 2rem;
+  letter-spacing: 0.2rem;
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 1rem;
-    width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 80%;
 }
 
 .gallery > figure {
-    position: relative;
+  position: relative;
 }
 
 .gallery > figure:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .gallery > figure:hover .overlay {
-    opacity: 1;
+  opacity: 1;
 }
 
 .gallery > figure:hover > img {
-    transform: scale(1.03);
-    opacity: 0.3;
+  transform: scale(1.03);
+  opacity: 0.3;
 }
 
 .gallery > figure > img {
-    width: 20rem;
-    height: 27rem;
-    margin: 1rem;
-    opacity: 0.6;
-    transition: 0.7s;
-    flex: 0 0 30%;
-    border-radius: 0.1rem;
+  border-radius: 0.1rem;
+  flex: 0 0 30%;
+  height: 27rem;
+  margin: 1rem;
+  opacity: 0.6;
+  transition: 0.7s;
+  width: 20rem;
 }
 
 .gallery > figure > figcaption {
-    font-size: 1.2rem;
-    letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
 }
 
 .overlay {
-    position: absolute;
-    opacity: 0;
-    top: 18%;
-    left: 2%;
-    padding: 2.2rem;
-    letter-spacing: 0.1rem;
-    line-height: 1.3rem;
-    transition: 1s;
+  left: 2%;
+  letter-spacing: 0.1rem;
+  line-height: 1.3rem;
+  opacity: 0;
+  padding: 2.2rem;
+  position: absolute;
+  top: 18%;
+  transition: 1s;
 }

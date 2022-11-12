@@ -1,155 +1,155 @@
 /* curiosites-01 */
 
 .curiosites-01 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .curiosites-01 > h1 {
-    font-weight: lighter;
-    font-size: 3rem;
-    letter-spacing: 0.2rem;
-    margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: lighter;
+  letter-spacing: 0.2rem;
+  margin-top: 2rem;
 }
 
 .curiosites-01 > p {
-    width: 20rem;
-    font-weight: lighter;
-    letter-spacing: 0.1rem;
+  font-weight: lighter;
+  letter-spacing: 0.1rem;
+  width: 20rem;
 }
 
 .curiosites-01-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 1rem;
-    justify-content: center;
-    width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 70%;
 }
 
 .curiosites-01-container > div {
-    flex: 0 0 39%;
-    padding: 2rem;
-    margin-top: 2rem;
+  flex: 0 0 39%;
+  margin-top: 2rem;
+  padding: 2rem;
 }
 
 .curiosites-01-container > div > i {
-    font-size: 6rem;
-    opacity: 0.6;
+  font-size: 6rem;
+  opacity: 0.6;
 }
 
 .curiosites-01-container > div > p {
-    font-weight: lighter;
-    margin-top: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
+  font-weight: lighter;
+  letter-spacing: 0.2rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
 }
 
 /* curiosites-02 */
 
 .curiosites-02 {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 2rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    margin-top: 5rem;
-    align-items: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5rem;
+  padding: 2rem 0;
+  text-align: center;
+  width: 100%;
 }
 
 .curiosites-02 > div {
-    width: 20rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
 }
 
 .curiosites-02 > div > img {
-    width:14rem;
-    height: 14rem;
-    border-radius: 50%;
-    object-fit: cover;
-    padding: 1rem 0;
+  border-radius: 50%;
+  height: 14rem;
+  object-fit: cover;
+  padding: 1rem 0;
+  width: 14rem;
 }
 
 .curiosites-02 > div > p {
-    width: 16rem;
-    line-height: 1.5rem;
-    padding: 1rem 0;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+  width: 16rem;
 }
 
 /* curiosites-03 */
 
 .curiosites-03 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 3rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  text-align: center;
 }
 
 .curiosites-03 > h2 {
-    font-weight: lighter;
-    font-size: 3rem;
-    letter-spacing: 0.2rem;
-    margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: lighter;
+  margin-top: 2rem;
+  letter-spacing: 0.2rem;
 }
 
 .curiosites-03 > p {
-    width: 20rem;
-    font-weight: lighter;
-    letter-spacing: 0.1rem;
+  font-weight: lighter;
+  letter-spacing: 0.1rem;
+  width: 20rem;
 }
 
 .curiosites-03-container {
-    display: flex;
-    flex-direction: row;
-    margin-top: 5rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: left;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5rem;
+  text-align: left;
+  width: 100%;
 }
 
 .curiosites-03-container > div {
-    padding: 4rem 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
 }
 
 .curiosites-03-container > div > h3 {
-    font-size: 2rem;
-    letter-spacing: 0.2rem;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
 }
 
 .curiosites-03-container > div > i {
-    font-size: 1.5rem;
-    padding: 0.5rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
 }
 
 .curiosites-03-container > div > p {
-    width: 19rem;
-    text-align: center;
+  text-align: center;
+  width: 19rem;
 }
 /* media */
 
 @media (max-width: 640px) {
-    .curiosites-02 > div:nth-child(2) {
-        flex-direction: column-reverse;
-    }
+  .curiosites-02 > div:nth-child(2) {
+    flex-direction: column-reverse;
+  }
 
-    .curiosites-03-container > div {
-        padding: 4rem 0;
-    }
+  .curiosites-03-container > div {
+    padding: 4rem 0;
+  }
 }
 
 @media (max-width: 1472px) {
-    .curiosites-03-container > div {
-        flex: 0 0 40%;
-    }
+  .curiosites-03-container > div {
+    flex: 0 0 40%;
+  }
 }

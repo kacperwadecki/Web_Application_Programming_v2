@@ -1,138 +1,141 @@
 main {
-    display: flex;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 .contact {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin-left: 12%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-left: 12%;
 }
 
 .contact > h1 {
-    position: absolute;
-    left: 20%;
-    top: 0;
-    font-weight: lighter;
-    font-size: 2rem;
-    letter-spacing: 0.2rem;
+  font-size: 2rem;
+  font-weight: lighter;
+  left: 20%;
+  letter-spacing: 0.2rem;
+  position: absolute;
+  top: 0;
 }
 
 .contact-inputs {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
 }
 
 .contact-inputs > p {
-    display: flex;
-    flex-direction: column;
-    font-weight: lighter;
-    margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: lighter;
+  margin-top: 2rem;
 }
 
-.contact-inputs > p > input, textarea {
-    width: 20rem;
-    background: none;
-    border-bottom: 0.1rem solid #aaa;
-    padding: 0.7rem;
-    outline: none;
-    color: #fff;
-    margin-top: 0.2rem;
-    resize: none;
+.contact-inputs > p > input,
+textarea {
+  background: none;
+  border-bottom: 0.1rem solid var(--border-inputs-color);
+  color: var(--font-color);
+  margin-top: 0.2rem;
+  outline: none;
+  padding: 0.7rem;
+  resize: none;
+  width: 20rem;
 }
 
 textarea {
-    padding-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
 .contact-inputs > input[type="submit"] {
-    margin: auto;
-    margin-top: 2rem;
-    width: 10rem;
-    height: 2.5rem;
-    border-radius: 0.1rem;
-    background: none;
-    color: #fff;
-    border: 0.1rem solid #aaa;
-    letter-spacing: 0.1rem;
+  background: none;
+  border-radius: 0.1rem;
+  border: 0.1rem solid var(--border-inputs-color);
+  color: var(--font-color);
+  height: 2.5rem;
+  letter-spacing: 0.1rem;
+  margin-top: 2rem;
+  margin: auto;
+  width: 10rem;
 }
 
 .contact-inputs > input[type="submit"]:hover {
-    cursor: pointer;
-    border: 0.1rem solid #ccc;
+  border: 0.1rem solid #ccc;
+  cursor: pointer;
 }
 
 .contact-informations {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3.5rem;
 }
 
 .contact-informations > div {
-    flex: 0 0 34%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 6.9rem;
-    height: 12rem;
-    background-color: rgba(0, 0, 0, 0.15);
-    border-radius: 1rem;
-    padding: 1rem;
-    color: #ccc;
-    margin: 1rem;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 34%;
+  height: 12rem;
+  justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+  width: 6.9rem;
 }
 
 .contact-informations > div > i {
-    font-size: 4rem;
-    color: #aaa;
-    margin-top: 0.6rem;
-    height: 4rem;
+  color: #aaa;
+  font-size: 4rem;
+  height: 4rem;
+  margin-top: 0.6rem;
 }
 
-.contact-informations > div > h2{
-    font-weight: normal;
-    text-align: center;
-    letter-spacing: 0.1rem;
-    margin-top: 1rem;
-    height: 3rem;
+.contact-informations > div > h2 {
+  font-weight: normal;
+  height: 3rem;
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 .contact-informations > div > p {
-    font-weight: lighter;
-    margin-top: 1rem;
-    height: 3rem;
-    line-height: 1.4rem;
-    width: 100%;
-    text-align: center;
-    word-break: break-word;
+  font-weight: lighter;
+  height: 3rem;
+  line-height: 1.4rem;
+  margin-top: 1rem;
+  text-align: center;
+  width: 100%;
+  word-break: break-word;
 }
 
-.contact-informations > div:nth-child(n+3) > p {
-    margin-top: 0;
+.contact-informations > div:nth-child(n + 3) > p {
+  margin-top: 0;
 }
 
 @media (max-width: 1219px) {
-    .contact {
-        flex-direction: column;
-        margin: 0;
-        align-items: center;
-    }
+  .contact {
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+  }
 }
 
 @media (max-width: 568px) {
-    .contact-informations > div > h2{
-        height: 4.5rem;
-    }
+  .contact-informations > div > h2 {
+    height: 4.5rem;
+  }
 
-    .contact-informations > div {
-        padding: 3rem;
-    }
-    .contact-inputs > p > input, textarea {
-        width: 16rem;
-    }
+  .contact-informations > div {
+    padding: 3rem;
+  }
+  
+  .contact-inputs > p > input,
+  textarea {
+    width: 16rem;
+  }
 }

@@ -152,7 +152,7 @@ body {
 
 /* media */
 
-@media (max-width: 900px) {
+@media (max-width: 920px) {
   .nav {
     align-items: center;
     flex-direction: column;
@@ -169,7 +169,7 @@ body {
     padding-bottom: 0.5rem;
     padding-right: 0;
     position: absolute;
-    top: -420%;
+    top: -550%;
     transition: 0.7s;
     width: 100%;
     z-index: 1;

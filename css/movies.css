@@ -1,0 +1,17 @@
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main > h1 {
+    font-size: 3rem;
+    font-weight: lighter;
+    margin-top: 2rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+main > figure {
+    margin-top: 1rem;
+}

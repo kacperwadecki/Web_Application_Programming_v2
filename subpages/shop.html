@@ -1,172 +1,240 @@
-<main>
-    <article class="shop-slider">
-        <div class="shop-slider-img">
-            <img class="fade-in" src="../img/shop-01.jpg" alt="">
-            <img class="fade-in" src="../img/shop-02.jpg" alt="">
-            <img class="fade-in" src="../img/shop-03.jpg" alt="">
-            <img class="fade-in" src="../img/shop-04.jpg" alt="">
-        </div>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematyka</title>
 
-        <div class="arrow-left">
-            <i class="fa-solid fa-circle-arrow-left"></i>
-        </div>
-        <div class="arrow-right">
-            <i class="fa-solid fa-circle-arrow-right"></i>
-        </div>
-    </article>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&display=swap" rel="stylesheet" />
 
-    <article class="shop-items">
-        <h1>Nasze artykuły</h1>
-        <div class="shop-item">
-            <figure>
-                <img src="../img/shop-05.jpg" alt="">
-                <figcaption>Kalkulator</figcaption>
-                <input class="overlay" type="button" value="Dodaj do koszyka">
-            </figure>
-            <p>14,99 zł</p>
-        </div>
-        <div class="shop-item">
-            <figure>
-                <img src="../img/shop-06.jpg" alt="">
-                <figcaption>Cyrkiel</figcaption>
-                <input class="overlay" type="button" value="Dodaj do koszyka">
-            </figure>
-            <p>25,99 zł</p>
-        </div>
-        <div class="shop-item">
-            <figure>
-                <img src="../img/shop-07.jpg" alt="">
-                <figcaption>Kurta</figcaption>
-                <input class="overlay" type="button" value="Dodaj do koszyka">
-            </figure>
-            <p>38,99 zł</p>
-        </div>
-        <div class="shop-item">
-            <figure>
-                <img src="../img/shop-08.png" alt="">
-                <figcaption>Książka</figcaption>
-                <input class="overlay" type="button" value="Dodaj do koszyka">
-            </figure>
-            <p>45,99 zł</p>
-        </div>
-        <div class="shop-item">
-            <figure>
-                <img src="../img/shop-09.png" alt="">
-                <figcaption>Książka</figcaption>
-                <input class="overlay" type="button" value="Dodaj do koszyka">
-            </figure>
-            <p>43,99 zł</p>
-        </div>
-        <div class="shop-item">
-            <figure>
-                <img src="../img/shop-10.png" alt="">
-                <figcaption>Książka</figcaption>
-                <input class="overlay" type="button" value="Dodaj do koszyka">
-            </figure>
-            <p>66,99 zł</p>
-        </div>
-        <div class="shop-item">
-            <figure>
-                <img src="../img/shop-11.png" alt="">
-                <figcaption>Zegar</figcaption>
-                <input class="overlay" type="button" value="Dodaj do koszyka">
-            </figure>
-            <p>23,99 zł</p>
-        </div>
-        <div class="shop-item">
-            <figure>
-                <img src="../img/shop-12.png" alt="">
-                <figcaption>Kubek</figcaption>
-                <input class="overlay" type="button" value="Dodaj do koszyka">
-            </figure>
-            <p>54,99 zł</p>
-        </div>
-        <div class="shop-item">
-            <figure>
-                <img src="../img/shop-13.png" alt="">
-                <figcaption>Książka</figcaption>
-                <input class="overlay" type="button" value="Dodaj do koszyka">
-            </figure>
-            <p>65,99 zł</p>
-        </div>
-        <div class="shop-item">
-            <figure>
-                <img src="../img/shop-14.png" alt="">
-                <figcaption>Książka</figcaption>
-                <input class="overlay" type="button" value="Dodaj do koszyka">
-            </figure>
-            <p>97,99 zł</p>
-        </div>
-        <div class="shop-item">
-            <figure>
-                <img src="../img/shop-15.png" alt="">
-                <figcaption>Płyta</figcaption>
-                <input class="overlay" type="button" value="Dodaj do koszyka">
-            </figure>
-            <p>64,99 zł</p>
-        </div>
-        <div class="shop-item">
-            <figure>
-                <img src="../img/shop-16.png" alt="">
-                <figcaption>Książka</figcaption>
-                <input class="overlay" type="button" value="Dodaj do koszyka">
-            </figure>
-            <p>66,99 zł</p>
-        </div>
-    </article>
+    <link rel="stylesheet" href="../splide-2.4.21/dist/css/splide.min.css" />
+    <link rel="stylesheet" href="../css/main-style.css" />
+    <link rel="stylesheet" href="../css/shop.css" />
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <i class="fa-solid fa-bars hamburger"></i>
+            <ul class="nav-bar">
+                <li class="nav-item"><a href="home-page.html">Strona Główna</a></li>
+                <li class="nav-item"><a href="famous-math.html">Znani Matematycy</a> </li>
+                <li class="nav-item"><a href="curiosities.html">Ciekawostki</a> </li>
+                <li class="nav-item page-active"><a href="shop.html">Sklep</a></li>
+                <li class="nav-item"><a href="applications.html">Aplikacje</a></li>
+                <li class="nav-item"><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <article class="shop-see-more">
-        <div>
-            <img src="../img/shop-17.jpg" alt="">
-            <input class="shop-see-more-overlay" type="button" value="Zobacz więcej">
-        </div>
-        <div>
-            <img src="../img/shop-18.jpg" alt="">
-            <input class="shop-see-more-overlay" type="button" value="Zobacz więcej">
-        </div>
-    </article>
-    
-    <article class="shop-recommended">
-        <h2>Polecamy</h2>
-        <div class="splide">
-            <div class="splide__track">
-
-                <ul class="splide__list">
-                    <li class="splide__slide">
-                    <div class="splide__slide__container">
-                        <img src="../img/shop-08.png">
-                    </div>
-                    </li>
-                    <li class="splide__slide">
-                    <div class="splide__slide__container">
-                        <img src="../img/shop-09.png">
-                    </div>
-                    </li>
-                    <li class="splide__slide">
-                    <div class="splide__slide__container">
-                        <img src="../img/shop-10.png">
-                    </div>
-                    </li>
-                    <li class="splide__slide">
-                    <div class="splide__slide__container">
-                        <img src="../img/shop-14.png">
-                    </div>
-                    </li>
-                    <li class="splide__slide">
-                    <div class="splide__slide__container">
-                        <img src="../img/shop-08.png">
-                    </div>
-                    </li>
-                    <li class="splide__slide">
-                    <div class="splide__slide__container">
-                        <img src="../img/shop-13.png">
-                    </div>
-                    </li>
-                </ul>
-
+    <main>
+        <article class="shop-slider">
+            <div class="shop-slider-img">
+                <img class="fade-in" src="../img/shop-01.jpg" alt="">
+                <img class="fade-in" src="../img/shop-02.jpg" alt="">
+                <img class="fade-in" src="../img/shop-03.jpg" alt="">
+                <img class="fade-in" src="../img/shop-04.jpg" alt="">
             </div>
-        </div>
-    </article>
-</main>
 
-<script src="../js/slider.js"></script>
+            <div class="arrow-left">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+            </div>
+            <div class="arrow-right">
+                <i class="fa-solid fa-circle-arrow-right"></i>
+            </div>
+        </article>
+
+        <article class="shop-items">
+            <h1>Nasze artykuły</h1>
+            <div class="shop-item">
+                <figure>
+                    <img src="../img/shop-05.jpg" alt="">
+                    <figcaption>Kalkulator</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
+                </figure>
+                <p>14,99 zł</p>
+            </div>
+            <div class="shop-item">
+                <figure>
+                    <img src="../img/shop-06.jpg" alt="">
+                    <figcaption>Cyrkiel</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
+                </figure>
+                <p>25,99 zł</p>
+            </div>
+            <div class="shop-item">
+                <figure>
+                    <img src="../img/shop-07.jpg" alt="">
+                    <figcaption>Kurta</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
+                </figure>
+                <p>38,99 zł</p>
+            </div>
+            <div class="shop-item">
+                <figure>
+                    <img src="../img/shop-08.png" alt="">
+                    <figcaption>Książka</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
+                </figure>
+                <p>45,99 zł</p>
+            </div>
+            <div class="shop-item">
+                <figure>
+                    <img src="../img/shop-09.png" alt="">
+                    <figcaption>Książka</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
+                </figure>
+                <p>43,99 zł</p>
+            </div>
+            <div class="shop-item">
+                <figure>
+                    <img src="../img/shop-10.png" alt="">
+                    <figcaption>Książka</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
+                </figure>
+                <p>66,99 zł</p>
+            </div>
+            <div class="shop-item">
+                <figure>
+                    <img src="../img/shop-11.png" alt="">
+                    <figcaption>Zegar</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
+                </figure>
+                <p>23,99 zł</p>
+            </div>
+            <div class="shop-item">
+                <figure>
+                    <img src="../img/shop-12.png" alt="">
+                    <figcaption>Kubek</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
+                </figure>
+                <p>54,99 zł</p>
+            </div>
+            <div class="shop-item">
+                <figure>
+                    <img src="../img/shop-13.png" alt="">
+                    <figcaption>Książka</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
+                </figure>
+                <p>65,99 zł</p>
+            </div>
+            <div class="shop-item">
+                <figure>
+                    <img src="../img/shop-14.png" alt="">
+                    <figcaption>Książka</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
+                </figure>
+                <p>97,99 zł</p>
+            </div>
+            <div class="shop-item">
+                <figure>
+                    <img src="../img/shop-15.png" alt="">
+                    <figcaption>Płyta</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
+                </figure>
+                <p>64,99 zł</p>
+            </div>
+            <div class="shop-item">
+                <figure>
+                    <img src="../img/shop-16.png" alt="">
+                    <figcaption>Książka</figcaption>
+                    <input class="overlay" type="button" value="Dodaj do koszyka">
+                </figure>
+                <p>66,99 zł</p>
+            </div>
+        </article>
+
+        <article class="shop-see-more">
+            <div>
+                <img src="../img/shop-17.jpg" alt="">
+                <input class="shop-see-more-overlay" type="button" value="Zobacz więcej">
+            </div>
+            <div>
+                <img src="../img/shop-18.jpg" alt="">
+                <input class="shop-see-more-overlay" type="button" value="Zobacz więcej">
+            </div>
+        </article>
+        
+        <article class="shop-recommended">
+            <h2>Polecamy</h2>
+            <div class="splide">
+                <div class="splide__track">
+
+                  <ul class="splide__list">
+                      <li class="splide__slide">
+                        <div class="splide__slide__container">
+                          <img src="../img/shop-08.png">
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="splide__slide__container">
+                          <img src="../img/shop-09.png">
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="splide__slide__container">
+                          <img src="../img/shop-10.png">
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="splide__slide__container">
+                          <img src="../img/shop-14.png">
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="splide__slide__container">
+                          <img src="../img/shop-08.png">
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="splide__slide__container">
+                          <img src="../img/shop-13.png">
+                        </div>
+                      </li>
+                  </ul>
+
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <div class="footer-logo"><i class="fa-regular fa-font-awesome"></i></div>
+            <ul class="footer-col1">
+                <li><a href="home-page.html">Strona Główna</a></li>
+                <li><a href="famous-math.html">Znani Matematycy</a></li>
+                <li><a href="curiosities.html">Ciekawostki</a></li>
+            </ul>
+            <ul class="footer-col2">
+                <li><a href="shop.html">Sklep</a></li>
+                <li><a href="applications.html">Aplikacje</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+            <ul class="footer-col3">
+                <li><a href="">Eum eligendi</a></li>
+                <li><a href="">Vitae nam</a></li>
+                <li><a href="">Tempora</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-socials">
+            <div>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-google"></i></a>
+            </div>
+            <p>Copyright © Tom Hansk All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../splide-2.4.21/dist/js/splide.min.js"></script>
+    <script src="../js/nav-bar.js"></script>
+    <script src="../js/slider.js"></script>
+</body>
+</html>
